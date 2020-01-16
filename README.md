@@ -43,9 +43,9 @@ We can sum up the main variables that influence the probability of default:
 -Interests on previous credits
 -The ratio between the interests and the value of the good of previous credits
 -The ratio between the interests and the credit of previous credits
-
 <table border="0">
-<tr><td> <img src="https://github.com/danielececcarelli/Home-Credit-Default-Risk-Applied-Stat-project/blob/master/images/CROSS_VALIDATION_AUC.jpg" width="380"> </td><td> <img src="hhttps://github.com/danielececcarelli/Home-Credit-Default-Risk-Applied-Stat-project/blob/master/images/roc_curve_test_0.769.jpg" width="380"> <td> </td></tr>
+<tr><td><img src="https://github.com/danielececcarelli/Home-Credit-Default-Risk-Applied-Stat-project/blob/master/images/CROSS_VALIDATION_AUC.jpg" width="380"> </td><td>
+<img src="https://github.com/danielececcarelli/Home-Credit-Default-Risk-Applied-Stat-project/blob/master/images/roc_curve_test_0.769.jpg" width="380"> <td> </td></tr>
 </table>
 
 ## Logistic Regr. with LASSU penalization
