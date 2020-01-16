@@ -34,6 +34,33 @@ The methods involving distance such as SVM, KNN or clustering approaches have be
 ## Logistic Regression
 
 The natural choice for this type of problem was of course a logistic regression.
-We choose a simple model with in the end just 30 variables, in order to focus more on the simplicity and interpretability of the model, that achieves a quite good score of AUC=0.758 on Kaggle testset. These are our results:
+We choose a simple model with in the end just 30 variables, in order to focus more on the simplicity and interpretability of the model, that achieves a quite good score of AUC=0.758 on Kaggle testset. 
+We can sum up the main variables that influence the probability of default:
+-Type of education
+-Number of previous refused applications at Home Credit
+-Previous installments for past loans at Home Credit
+-Scores of the applicant coming from other financial institutions
+-Interests on previous credits
+-The ratio between the interests and the value of the good of previous credits
+-The ratio between the interests and the credit of previous credits
+
+<table border="0">
+<tr><td> <img src="https://github.com/danielececcarelli/Home-Credit-Default-Risk-Applied-Stat-project/blob/master/images/CROSS_VALIDATION_AUC.jpg" width="380"> </td><td> <img src="hhttps://github.com/danielececcarelli/Home-Credit-Default-Risk-Applied-Stat-project/blob/master/images/roc_curve_test_0.769.jpg" width="380"> <td> </td></tr>
+</table>
 
 ## Logistic Regr. with LASSU penalization
+After that, we try a logistic regression with a Lassu Penalization with as result a model with just 9 variables, and this model can achieve a good AUC of 0.740.
+The selected variables are the 3 ext_scores (banking score for a subject made by some external financial institutes), a factor indicates if the subject has at least high school education, 3 variables on previous applications and 2 variables for Goods and Credit of a person.
+
+## Some Factor Analysis
+<table border="0">
+<tr><td> <img src="https://github.com/danielececcarelli/Home-Credit-Default-Risk-Applied-Stat-project/blob/master/images/density_gender.jpg" width="380"> </td><td> Difference in density from Male and Female. Male seems to be worse payers <td> </td></tr>
+</table>
+
+<table border="0">
+<tr><td> Higher education means less probability to be a bad payer </td><td><td> <img src="https://github.com/danielececcarelli/Home-Credit-Default-Risk-Applied-Stat-project/blob/master/images/density_educ.jpg" width="380"></td></tr>
+</table>
+
+<table border="0">
+<tr><td> <img src="https://github.com/danielececcarelli/Home-Credit-Default-Risk-Applied-Stat-project/blob/master/images/density_region.jpg" width="480"> </td><td> And finally a difference between region (in terms of quality rating: High, Medium or Low) in which the subject lives <td> </td></tr>
+</table>
